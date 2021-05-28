@@ -37,7 +37,7 @@
                     <div>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -51,7 +51,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -155,13 +155,13 @@
                         <div class="comment-form">
                             <form action="#" method="#" class="contact-form" name="contact-form">
                                 <div>
-                                    <label for="name"></label>
+                                    <label for="name" class="sr-only">Enter Your Name</label>
                                     <input type="text" class="user-input" id="name" name="name" placeholder="Name">
-                                    <label for="user-email"></label>
+                                    <label for="user-email" class="sr-only">Enter Your Email</label>
                                     <input type="email" class="user-input" id="email-address" name="email-address"
                                         placeholder="E-mail Address">
                                 </div>
-                                <label for="comment">Comment</label>
+                                <label for="comment" class="sr-only">Enter Your Comment</label>
                                 <textarea name="comment" id="comment" cols="20" rows="8" placeholder="Comment" required
                                     maxlength="255"></textarea>
                                 <input type="submit" value="Submit">

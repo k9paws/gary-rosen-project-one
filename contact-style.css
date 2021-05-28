@@ -517,7 +517,7 @@ h1 {
 }
 
 .contact-right {
-  width: 70%;
+  width: 100%;
   position: relative;
   margin-right: 20px;
 }
@@ -639,10 +639,6 @@ footer {
   .contact-main {
     width: 90%;
   }
-
-  .contact-right {
-    width: 80%;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -652,10 +648,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .contact-right {
-    width: 75%;
-  }
-}
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -718,9 +711,6 @@ h1 {
   padding-top: 20vh;
 }
 
-.contact-right {
-  width: 90%;
-}
 .contact-left {
   width: 90%;
   letter-spacing: 0.6px;
