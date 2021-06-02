@@ -1,0 +1,5 @@
+@mixin mobile325 {
+  @media (max-width: 325px) {
+    @content;
+  }
+}

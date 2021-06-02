@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -13,7 +18,8 @@ aside,
 footer,
 header,
 nav,
-section {
+section,
+img {
   display: block;
 }
 
@@ -269,55 +275,6 @@ html {
   overflow: hidden;
 }
 
-/* CUSTOM STYLING */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 125%;
-}
-
-p {
-  padding: 20px 0;
-  line-height: 1.5;
-  letter-spacing: 1px;
-}
-
-body,
-nav {
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-.btn-read-more,
-.find-out-button {
-  font-family: "IM Fell English", serif;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-h2 {
-  font-style: italic;
-  font-weight: 100;
-  font-size: 2rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 95%;
-}
-
-/* HEADER STYLING */
 /* HAMBURGER MENU STYLING */
 .menu-wrap {
   position: fixed;
@@ -488,16 +445,64 @@ a {
   font-size: 1.5rem;
   padding: 15px;
 }
-
-.menu-wrap .menu > div > div > ul > li > a {
+.menu-wrap .menu > div > div > ul > li a {
   color: #0d457f;
   text-decoration: none;
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
 }
 
+/* CUSTOM STYLING */
+html {
+  font-size: 125%;
+}
+
+p {
+  padding: 20px 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+body,
+nav {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn-read-more,
+.find-out-button {
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 2rem;
+}
+@media (max-width: 325px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* HEADER STYLING */
 header {
-  background: url("./assets/home-header.jpg") no-repeat;
+  background: url("../assets/home-header.jpg") no-repeat;
   background-size: cover;
   height: 85vh;
   position: relative;
@@ -534,11 +539,9 @@ nav a:focus {
   list-style: none;
   width: 100%;
 }
-
 .header-navbar ul li {
   padding: 80px 30px 0 30px;
 }
-
 .header-navbar ul li:first-child {
   padding-left: 0;
 }
@@ -550,6 +553,12 @@ h1 {
   font-style: italic;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
   color: #fdd908;
+}
+@media (max-width: 325px) {
+  h1 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
 }
 
 /* MAIN STYLING */
@@ -851,12 +860,12 @@ footer {
   .locations-img {
     right: 85px;
   }
-}
-.header-overlap-image {
-  width: 45%;
-  bottom: -175px;
-}
 
+  .header-overlap-image {
+    width: 45%;
+    bottom: -175px;
+  }
+}
 @media (max-width: 1470px) {
   h1 {
     padding-left: 40px;
@@ -915,6 +924,10 @@ footer {
 
   .header-navbar {
     padding-left: 100px;
+  }
+
+  .site-map-right > p {
+    margin-bottom: 95px;
   }
 
   .trip-text-side h2 {
@@ -1088,6 +1101,10 @@ footer {
 @media (max-width: 480px) {
   .menu-wrap {
     visibility: visible;
+  }
+
+  a {
+    cursor: pointer;
   }
 
   header {
@@ -1308,15 +1325,6 @@ footer {
 }
 /* Smaller older phones (iphone5) */
 @media (max-width: 325px) {
-  h1 {
-    font-size: 1.7rem;
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
   .banner-section img {
     height: 200px;
   }

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -13,13 +18,14 @@ aside,
 footer,
 header,
 nav,
-section {
+section,
+img {
   display: block;
 }
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  /* margin: .67em 0 */
 }
 
 figcaption,
@@ -269,47 +275,6 @@ html {
   overflow: hidden;
 }
 
-/* CUSTOM STYLING */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 125%;
-}
-
-body,
-nav {
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-input[type=submit] {
-  font-family: "IM Fell English", serif;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-h2 {
-  font-weight: 100;
-  font-size: 2rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 95%;
-}
-
-/* HEADER STYLING */
 /* HAMBURGER MENU STYLING */
 .menu-wrap {
   position: fixed;
@@ -480,16 +445,51 @@ a {
   font-size: 1.5rem;
   padding: 15px;
 }
-
-.menu-wrap .menu > div > div > ul > li > a {
+.menu-wrap .menu > div > div > ul > li a {
   color: #0d457f;
   text-decoration: none;
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
 }
 
+/* CUSTOM STYLING */
+html {
+  font-size: 125%;
+}
+
+body,
+nav {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+input[type=submit] {
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* HEADER STYLING */
 header {
-  background: url("./assets/contact-header.jpg") no-repeat;
+  background: url("../assets/contact-header.jpg") no-repeat;
   background-size: cover;
   height: 75vh;
 }
