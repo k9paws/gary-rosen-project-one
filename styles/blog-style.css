@@ -791,7 +791,7 @@ input[type=submit]:focus {
 
 .invalid-form-field {
   color: red;
-  border: 1px solid red;
+  border: 2px dotted red;
 }
 
 /* FOOTER STYLING */

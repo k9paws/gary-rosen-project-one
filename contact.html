@@ -102,18 +102,21 @@
 
 
 
-                        <form action="#" method="#" class="contact-form" name="contact-form">
+                        <form action="#" method="#" id="contact-form" class="contact-form" name="contact-form">
 
                             <span>
                                 <label for="name" class="sr-only">Enter Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="text"  id="contact-form-user-name"  name="name" placeholder="Name">
                                 <label for="user-email" class="sr-only">Enter E-mail Address</label>
-                                <input type="email" id="email-address" name="email-address" placeholder="E-mail Address">
+                                <input type="email"  id="contact-form-user-email"  name="email-address" placeholder="E-mail Address">
                             </span>
 
                             <label for="comment" class="sr-only">Enter Your Comments</label>
-                            <textarea name="comment" id="comment" cols="20" rows="8" placeholder="Comment" required
+                            <textarea name="comment"  id="contact-form-user-comment"  cols="20" rows="8" placeholder="Comment" required
                                 maxlength="255"></textarea>
+
+                                <div class="form-error-summary-msg hidden" id="contact-form-error-summary">Form not valid!</div>
+
                             <input type="submit" value="Submit">
                         </form>
 
@@ -134,5 +137,14 @@
         </div>
     </footer>
 </body>
+
+<script src="script.js"></script>
+
+<script>
+
+    contactPage();
+
+</script>
+
 
 </html>
