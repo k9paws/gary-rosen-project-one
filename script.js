@@ -25,6 +25,10 @@
         if (emailEl.value === "") {
             isValid = false;
         } 
+        const commentEl = document.getElementById("blog-form-user-comment");
+        if (commentEl.value === "") {
+            isValid = false;
+        } 
 
 
 
