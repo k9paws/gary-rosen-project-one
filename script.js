@@ -1,12 +1,15 @@
-//BLOG-COMMENT FORM CODE
-function blogPage() {
 
   // Handle errors on form submission
-  // Prevent default behaviour of form submission
-  // Check that user has entered a NAME
-  // Check that user has entered an EMAIL
-  // Check that use has entered a COMMENT
-  // Check that user has entered a VALID EMAIL
+    // Prevent default behaviour of form submission
+    // Check that user has entered a NAME
+    // Check that user has entered an EMAIL
+    // Check that use has entered a COMMENT
+    // Check that user has entered a VALID EMAIL
+
+
+//BLOG-COMMENT FORM CODE
+
+function blogPage() {
 
   // Locating form element from the DOM
 
@@ -31,7 +34,7 @@ function blogPage() {
       nameEl.classList.remove("invalid-form-field");
     }
 
-    // Retrieve the EMAIL Element value and check if Valid
+    // Retrieve the EMAIL Element value AND check if Valid
     const emailEl = document.getElementById("blog-form-user-email");
     if (emailEl.value === "") {
       isValid = false;
@@ -60,8 +63,7 @@ function blogPage() {
       // ^ Now form has been preventing from submitting until I tell it to
 
       const errorMsgEl = document.getElementById(
-        "blog-contact-form-error-summary"
-      );
+        "blog-contact-form-error-summary");
       // Remove HIDDEN Class from ^ element
 
       errorMsgEl.classList.remove("hidden");
@@ -72,7 +74,7 @@ function blogPage() {
     }
   }
 
-  // Valid EMAIL ADDRESS Code taken from "https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript"
+  // Check for Valid EMAIL ADDRESS Code, taken from: "https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript"
   function isEmailValid(email) {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -82,20 +84,9 @@ function blogPage() {
 
 
 
-
-
-
 //CONTACT-PAGE FORM CODE
+
 function contactPage() {
-
-  // Handle errors on form submission
-  // Prevent default behaviour of form submission
-  // Check that user has entered a NAME
-  // Check that user has entered an EMAIL
-  // Check that use has entered a COMMENT
-  // Check that user has entered a VALID EMAIL
-
-  // Locating form element from the DOM
 
   const contactFormElement = document.getElementById("contact-form");
 
@@ -118,7 +109,7 @@ function contactPage() {
       contactNameEl.classList.remove("invalid-form-field");
     }
 
-    // Retrieve the EMAIL Element value and check if Valid
+    // Retrieve the EMAIL Element value AND check if Valid
     const contactEmailEl = document.getElementById("contact-form-user-email");
     if (contactEmailEl.value === "") {
       isValid = false;
@@ -133,7 +124,8 @@ function contactPage() {
     }
 
     // Retrieve the COMMENT Element value
-    const contactCommentEl = document.getElementById("contact-form-user-comment");
+    const contactCommentEl = document.getElementById(
+        "contact-form-user-comment");
     if (contactCommentEl.value === "") {
       isValid = false;
       contactCommentEl.classList.add("invalid-form-field");
@@ -147,8 +139,7 @@ function contactPage() {
       // ^ Now form has been preventing from submitting until I tell it to
 
       const contactErrorMsgEl = document.getElementById(
-        "contact-form-error-summary"
-      );
+        "contact-form-error-summary");
       // Remove HIDDEN Class from ^ element
 
       contactErrorMsgEl.classList.remove("hidden");
@@ -159,7 +150,7 @@ function contactPage() {
     }
   }
 
-  // Valid EMAIL ADDRESS Code taken from "https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript"
+// EMAIL Validation
   function isEmailValid(email) {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
