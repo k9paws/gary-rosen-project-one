@@ -153,19 +153,23 @@
                             </div>
                         </div>
                         <div class="comment-form">
-                            <form action="#" method="#" class="contact-form" name="contact-form">
+
+                            <form action="#" method="#" id="blog-contact-form" class="blog-contact-form" name="blog-contact-form">
                                 <div>
                                     <label for="name" class="sr-only">Enter Your Name</label>
-                                    <input type="text" class="user-input" id="name" name="name" placeholder="Name">
+                                    <input type="text" class="user-input" id="blog-form-user-name" name="name" placeholder="Name">
+
                                     <label for="user-email" class="sr-only">Enter Your Email</label>
-                                    <input type="email" class="user-input" id="email-address" name="email-address"
+                                    <input type="email" class="user-input" id="blog-form-user-email" name="email-address"
                                         placeholder="E-mail Address">
                                 </div>
                                 <label for="comment" class="sr-only">Enter Your Comment</label>
-                                <textarea name="comment" id="comment" cols="20" rows="8" placeholder="Comment" required
+                                <textarea name="comment" id="comment" cols="20" rows="8" placeholder="Comment"
                                     maxlength="255"></textarea>
                                 <input type="submit" value="Submit">
                             </form>
+
+
                         </div>
 
                     </div>
@@ -182,6 +186,9 @@
             <h5>Copyright &copy 2021 Juno College</h5>
         </div>
     </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
