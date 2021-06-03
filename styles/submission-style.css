@@ -275,7 +275,6 @@ html {
   overflow: hidden;
 }
 
-/* HAMBURGER MENU STYLING */
 .menu-wrap {
   position: fixed;
   margin-top: 30px;
@@ -452,7 +451,6 @@ html {
   transition: color 0.4s ease;
 }
 
-/* CUSTOM STYLING */
 html {
   font-size: 125%;
 }
@@ -462,10 +460,6 @@ nav {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
 input[type=submit] {
   font-family: "IM Fell English", serif;
   text-transform: uppercase;
@@ -473,8 +467,10 @@ input[type=submit] {
 }
 
 h2 {
+  color: #eafefc;
   font-weight: 100;
   font-size: 2rem;
+  padding: 15px 0;
 }
 
 a {
@@ -484,12 +480,12 @@ a {
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 /* HEADER STYLING */
 header {
-  background: url("../assets/contact-header.jpg") no-repeat;
+  background: url("../assets/blog-header.jpg") no-repeat;
   background-size: cover;
   height: 75vh;
 }
@@ -526,329 +522,4 @@ nav a:focus {
   padding-left: 0;
 }
 
-h1 {
-  padding-top: 5vh;
-  font-size: 4.5rem;
-  width: 60%;
-  text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
-  color: #eafefc;
-}
-
 /* MAIN STYLING */
-.contact-section {
-  background: #eafefc;
-}
-
-.contact-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1300px;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-}
-
-.contact-left {
-  width: 30%;
-  line-height: 1.4;
-  padding-top: 80px;
-  padding-bottom: 150px;
-  letter-spacing: 1.2px;
-}
-
-.contact-right {
-  width: 100%;
-  position: relative;
-  margin-right: 20px;
-}
-
-.contact-right > div {
-  position: relative;
-  bottom: 125px;
-  width: 100%;
-  -webkit-box-shadow: 20px 20px #fdd908;
-          box-shadow: 20px 20px #fdd908;
-}
-
-.social-media-navbar {
-  padding: 20px 0;
-}
-
-.social-media-navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #0d457f;
-  list-style: none;
-  padding-bottom: 20px;
-}
-
-.social-media-navbar ul li a {
-  color: #0d457f;
-  padding: 0 25px;
-  font-size: 1.2rem;
-}
-
-.social-media-navbar ul li a:first-child {
-  padding-left: 0px;
-}
-
-.social-media-navbar ul li a:hover,
-.social-media-navbar ul li a:focus {
-  text-shadow: 0 0 black, 3px 3px 2px #fdd908;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-}
-
-span {
-  color: #0d457f;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #0d457f;
-  padding: 30px 0;
-  width: 100%;
-  height: 100%;
-}
-
-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-span input {
-  width: 100%;
-}
-
-label {
-  display: none;
-  width: 100%;
-}
-
-input,
-textarea {
-  background: #0d457f;
-  color: white;
-  padding: 20px;
-  margin: 20px 40px;
-  border: none;
-}
-
-input {
-  border-bottom: 2px solid #fdd908;
-}
-
-textarea {
-  border: 2px solid #fdd908;
-}
-
-input[type=submit] {
-  text-align: center;
-  background: #fdd908;
-  color: #0d457f;
-  border: none;
-  padding: 10px;
-  letter-spacing: 2px;
-  font-size: 1rem;
-}
-
-input[type=submit]:hover,
-input[type=submit]:focus {
-  background-color: #eafefc;
-  outline: 3px solid #fdd908;
-  color: black;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-  cursor: pointer;
-}
-
-.form-error-summary-msg {
-  color: red;
-  font-style: italic;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hidden {
-  display: none;
-}
-
-.invalid-form-field {
-  color: red;
-  border: 2px dotted red;
-}
-
-/* FOOTER STYLING */
-footer {
-  background: #fdd908;
-  color: #0d457f;
-  font-weight: 100;
-  padding: 8px 0;
-  text-align: center;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 1358px) {
-  .header-navbar {
-    padding-left: 50px;
-  }
-
-  .contact-main {
-    width: 90%;
-  }
-}
-@media (max-width: 1200px) {
-  .header-navbar {
-    padding-left: 100px;
-  }
-}
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  h1 {
-    padding-top: 10vh;
-    font-size: 4rem;
-    margin-top: 0;
-  }
-
-  h1,
-nav {
-    width: 100%;
-  }
-
-  .header-navbar ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .header-navbar {
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .contact-main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .contact-left {
-    width: 70%;
-    padding: 0 0 50px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .contact-right {
-    width: 90%;
-    top: 30px;
-  }
-
-  footer {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-}
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  nav {
-    display: none;
-  }
-
-  .menu-wrap {
-    visibility: visible;
-  }
-
-  h1 {
-    padding-top: 20vh;
-  }
-
-  .contact-left {
-    width: 90%;
-    letter-spacing: 0.6px;
-  }
-
-  .social-media-navbar {
-    padding: 0;
-  }
-
-  input,
-textarea {
-    font-size: 0.8rem;
-    margin: 15px;
-  }
-
-  .social-media-navbar ul li a:hover,
-.social-media-navbar ul li a:focus {
-    text-shadow: 0 0 black, 3px 3px 2px #fdd908;
-    -webkit-transition-duration: 0.1s;
-            transition-duration: 0.1s;
-  }
-}
-@media (max-width: 415px) {
-  span {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-  }
-
-  .contact-left {
-    width: 85%;
-    letter-spacing: 0.1px;
-  }
-
-  .social-media-navbar {
-    margin-right: 20px;
-  }
-}
-@media (max-width: 380px) {
-  h1 {
-    font-size: 3rem;
-    padding-top: 25vh;
-  }
-}
-/* Smaller older phones  */
-@media (max-width: 325px) {
-  .contact-left {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 70%;
-  }
-}

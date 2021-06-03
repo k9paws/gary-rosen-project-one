@@ -1,0 +1,81 @@
+@import "setup";
+
+// /* HAMBURGER MENU STYLING */
+@import "hamburger";
+
+// CUSTOM STYLING 
+
+html {
+  font-size: 125%;
+}
+
+body,
+nav {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="submit"] {
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+
+h2 {
+  color: #eafefc;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* HEADER STYLING */
+
+header {
+  background: url("../assets/blog-header.jpg") no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom: 2px solid #fdd908;
+}
+
+.header-navbar {
+  width: 100%;
+}
+
+.header-navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-navbar ul li {
+  padding: 80px 30px 0 30px;
+}
+
+.header-navbar ul li:first-child {
+  padding-left: 0;
+}
+
+/* MAIN STYLING */
