@@ -3,7 +3,7 @@
 // /* HAMBURGER MENU STYLING */
 @import "hamburger";
 
-// CUSTOM STYLING 
+// CUSTOM STYLING
 
 html {
   font-size: 125%;
@@ -20,11 +20,10 @@ input[type="submit"] {
   font-style: italic;
 }
 
-
 h1 {
   padding-top: 35vh;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
-//   font-style: italic;
+  //   font-style: italic;
   color: #eafefc;
   font-weight: 200;
   font-size: 3rem;
@@ -33,13 +32,12 @@ h1 {
 
 h2 {
   text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
-//   font-style: italic;
+  //   font-style: italic;
   color: #eafefc;
   font-weight: 200;
   font-size: 1.5rem;
   padding-bottom: 25px;
 }
-
 
 a {
   text-decoration: none;
@@ -58,7 +56,6 @@ header {
   background-size: cover;
   height: 100vh;
 }
-
 
 nav a {
   color: #ffffff;
@@ -91,7 +88,7 @@ nav a:focus {
 }
 
 .return-home-button {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .btn-home {
@@ -123,10 +120,10 @@ footer {
 
 // MEDIA QUERIES
 
-@media (max-width:1485px) {
-    .head-container {
-        margin: 0 50px;
-    }
+@media (max-width: 1485px) {
+  .head-container {
+    margin: 0 50px;
+  }
 }
 
 @media (max-width: 560px) {

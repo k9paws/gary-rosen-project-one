@@ -78,7 +78,7 @@ nav a:focus {
 }
 
 h1 {
-  padding-top: 5vh;
+  padding-top: 20vh;
   font-size: 4.5rem;
   width: 60%;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
@@ -227,7 +227,6 @@ input[type="submit"]:focus {
   border: 2px dotted red;
 }
 
-
 /* FOOTER STYLING */
 
 footer {
@@ -330,12 +329,6 @@ footer {
   textarea {
     font-size: 0.8rem;
     margin: 15px;
-  }
-
-  .social-media-navbar ul li a:hover,
-  .social-media-navbar ul li a:focus {
-    text-shadow: 0 0 black, 3px 3px 2px #fdd908;
-    transition-duration: 0.1s;
   }
 }
 

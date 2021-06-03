@@ -3,7 +3,7 @@
 // /* HAMBURGER MENU STYLING */
 @import "hamburger";
 
-// CUSTOM STYLING 
+// CUSTOM STYLING
 
 html {
   font-size: 125%;
@@ -25,7 +25,7 @@ input[type="submit"] {
 }
 
 h1 {
-  padding-top: 5vh;
+  padding-top: 20vh;
   font-size: 4.5rem;
   width: 60%;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
@@ -71,7 +71,6 @@ header {
   background-size: cover;
   height: 75vh;
 }
-
 
 nav a {
   color: #ffffff;
@@ -316,8 +315,6 @@ input[type="submit"]:focus {
   color: red;
   border: 2px dotted red;
 }
-
-
 
 /* FOOTER STYLING */
 
