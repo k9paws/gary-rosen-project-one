@@ -160,12 +160,15 @@
                                     <input type="text" class="user-input" id="blog-form-user-name" name="name" placeholder="Name">
 
                                     <label for="user-email" class="sr-only">Enter Your Email</label>
-                                    <input type="email" class="user-input" id="blog-form-user-email" name="email-address"
+                                    <input type="text" class="user-input" id="blog-form-user-email" name="email-address"
                                         placeholder="E-mail Address">
                                 </div>
                                 <label for="comment" class="sr-only">Enter Your Comment</label>
                                 <textarea name="comment" id="blog-form-user-comment" cols="20" rows="8" placeholder="Comment"
                                     maxlength="255"></textarea>
+
+                                <div class="form-error-summary-msg hidden" id="blog-contact-form-error-summary">Form not valid!</div>
+
                                 <input type="submit" value="Submit">
                             </form>
 

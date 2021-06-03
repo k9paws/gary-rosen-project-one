@@ -299,6 +299,21 @@ input[type="submit"]:focus {
   cursor: pointer;
 }
 
+.form-error-summary-msg {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.invalid-form-field {
+  color: red;
+  border: 1px solid red;
+}
+
+
+
 /* FOOTER STYLING */
 
 footer {
